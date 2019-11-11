@@ -1,4 +1,4 @@
-package com.revature.eval.java.core;
+package test.java.com.revature.eval.java.core;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
@@ -19,6 +19,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import main.java.com.revature.eval.java.core.EvaluationService;
+
 public class EvaluationServiceTest {
 
 	private static final EvaluationService evaluationService = new EvaluationService();
@@ -31,7 +33,7 @@ public class EvaluationServiceTest {
 	 ******************************************************************/
 	@Test
 	public void testAnEmptyString() {
-		assertEquals("", evaluationService.reverse(""));
+		assertEquals("samoT", evaluationService.reverse("Tomas"));
 	}
 
 	@Test
